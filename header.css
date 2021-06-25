@@ -1,22 +1,32 @@
 header{
     display: flex;
-    width: 100vw;
+    width: auto;
     height: 70px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* background-color: rgb(172, 172, 172); */
     color: black;
+    padding: 0 20px;
+}
+.company-logo{
+    /* margin-left: 20px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .companylogo img{
     width: 100px;
-    height: 65px;
-    margin-left: 2vw;
+    height: 47px;
+}
+.company-logo a{
+    text-decoration: none;
 }
 .company-name{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Prompt', sans-serif;
     font-weight: bold;
     font-size: 40px;
+    color: black;
 }
 .search{
     display: flex;
@@ -39,9 +49,9 @@ header{
     display: inline-block;
     width: 150px;
     height: 70px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 70px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Spartan', sans-serif;
     text-align: center;
 }
 .block:hover{

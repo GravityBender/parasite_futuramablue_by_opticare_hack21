@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="futurama-slider.css">
     <link rel="stylesheet" href="other-products.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/c41d9efb3c.js" crossorigin="anonymous"></script>
     <style>
@@ -198,25 +200,31 @@
             <div class="form">
                 <form action="POST">
                     <div class="form-elements">
-                        <label for="name">Full Name: </label>
-                        <input type="text" name="name" id="name">
+                        <label for="name">First Name: </label>
+                        <input type="text" name="name">
+                        <label for="name">Last Name: </label>
+                        <input type="text" name="name">
                     </div>
                     <div class="form-elements">
                         <label for="age">Age: </label>
                         <input type="number" name="age" id="age">
                         <label for="male">Gender: </label>
                         <div class="gender">
-                        <label for="male">M</label>
+                        <label for="male">Male</label>
                         <input type="radio" name="gender" id="male">
-                        <label for="female">F</label>
+                        <label for="female">Female</label>
                         <input type="radio" name="gender" id="female">
-                        <label for="others">O</label>
+                        <label for="others">Others</label>
                         <input type="radio" name="gender" id="others">
                     </div>
                     </div>
                     <div class="form-elements">
                         <label for="">Describe your problem or need: </label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div>
+                        <button class="submit-form">Submit</button>
                     </div>
 
                 </form>
@@ -243,6 +251,49 @@
             
         </div>
     </div>
+
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-input about">
+                <h1 class="name">
+                    <span class="company-name-footer">OptiCare</span>
+                </h1><br>
+                <p class="footer-data">OptiCare is the best eye-product selling company. We sell glasses that help everyonefrom a student in their studies and daily mobile/computer usage to their grandpas who couldn't read the newspaper headline.</p><br>
+                <span class="footer-data">Email:&nbsp;<a href="#" class="email">helpdesk@opticare.co.in</a></span><br>
+                <span class="footer-data">Social Media links:</span><br>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>&nbsp;
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>&nbsp;
+                <a href="https://www.reddit.com/" class="fa fa-reddit"></a>&nbsp;
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>&nbsp;
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>&nbsp;
+            </div>
+            <div class="footer-input links">
+                <h2>Quick links:</h2><br>
+                <ul>
+                    <li class="footer-data"><a href="#">Home</a></li>
+                    <li class="footer-data"><a href="#">FUTURAMA Blue</a></li>
+                    <li class="footer-data"><a href="#">Doctor's Consultancy</a></li>
+                    <li class="footer-data"><a href="#">Stores in India</a></li>
+                </ul><br>
+                <span class="h4 footer-data"><a href="form.xhtml" class="email">Click here</a>&nbsp;to see all the spectacles</span>
+               
+            </div>
+            <div class="footer-input feedback">
+                <h2>Feedback:</h2><br>
+                <div class="feedback-content">
+                    <input type="email" name="email" class="text email-add" placeholder=" Enter your email address"><br>
+                    <textarea name="message" class="text" rows="6" placeholder=" Enter your feedback"></textarea><br>
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            &copy;OptiCare Products 2020-21
+        </div>
+    </footer>
 </body>
 
 </html>

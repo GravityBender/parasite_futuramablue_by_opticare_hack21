@@ -1,0 +1,122 @@
+footer{
+    margin-top: 100px;
+}
+footer .footer-content{
+    display: flex;
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 255, 255);
+    flex-direction: row;
+    height: 300px;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .footer-content .footer-input{
+    width: 25vw;
+}
+.company-name-footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+}
+.links-responsive{
+    display: none;
+}
+.email{
+    color: rgb(35, 35, 77);
+}
+.email:hover{
+    color: rgb(49, 120, 214);
+}
+.fa {
+    padding: 10px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 18px;
+    opacity: 0.7;
+}
+.fa:hover {
+    opacity: 1;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter{
+    background-color: cornflowerblue;
+    color: white;
+}
+.fa-reddit{
+    background-color: tomato;
+    color: white;
+}
+.fa-youtube{
+    background-color: red;
+    color: white;
+}
+.fa-instagram{
+    background-color: rgb(218, 42, 209);
+    color: white;
+}
+.links{
+    line-height: 25px;
+}
+.links ul{
+    list-style: inside;
+}
+.links ul li a{
+    text-decoration: none;
+    color: rgb(218, 213, 213);
+    transition: all 0.1s;
+}
+.links ul li a:hover{
+    color: white;
+    margin-left: 5px;
+}
+.feedback-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 13px;
+}
+.text{
+    width: 350px;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    border: 1px double rgb(223, 223, 223);
+    border-radius: 3px;
+    font-family: 'arial';
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.text:hover{
+    background-color: black;
+    border: 1px double white;
+}
+.email-add{
+    height: 30px;
+}
+button{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    border: 1px solid rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(189, 192, 189);
+    color: rgb(66, 66, 66);
+    border: 2px solid rgb(66, 66, 66);
+}
+
+footer .footer-bottom{
+    background-color: rgb(59, 59, 59);
+    color: rgb(128, 128, 128);
+    height: 20px;
+    text-align: center;
+    width: auto;
+}
+

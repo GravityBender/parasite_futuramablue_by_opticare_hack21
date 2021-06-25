@@ -1,0 +1,123 @@
+.other-products{
+    width: 1500px;
+    height: 900px;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(212, 212, 212);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.other-products h2{
+    width: 1400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+}
+.items{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-info{
+    display: flex;
+    align-items: center;
+}
+
+.item-name{
+    width: 300px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.item-name-specs{
+    font-weight: normal;
+    
+}
+
+.buy-or-cart{
+    width: 150px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 233, 27);
+}
+.see-all{
+    margin-left: 1400px;
+}
+
+.accessories{
+    height:500px;
+    margin-top: 30px;
+}
+
+.contact-doc{
+    width: 900px;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.form{
+    width: 900px;
+    height: 250px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 250px;
+    margin: auto;
+}
+.form-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-elements input{
+    height: 20px;
+}
+
+#name{
+    width: 400px;
+}
+#age{
+    width: 100px;
+}
+
+.stores{
+    width: 550px;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.consult-and-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    justify-content: space-evenly;
+}
+.or hr{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.msg-at-whatsapp{
+    width: 900px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="futurama-slider.css">
+    <link rel="stylesheet" href="other-products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/c41d9efb3c.js" crossorigin="anonymous"></script>
     <style>
@@ -37,13 +38,13 @@
             </div>
             <i class="material-icons">&#xe152;</i>
         </div>
-        <div class="buy-or-cart">
-            <span class="block" onclick="buynow()"> Buy Now <i class="fas fa-shopping-cart"></i></span><span class="block" onclick="addtocart()">Add to Cart <i
-                    class='fas fa-cart-plus'></i> </span>
+        <div class="buy-or-addcart">
+            <span class="block"> Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></span><span class="block"
+                onclick="addtocart()">Add to Cart <i class='fas fa-cart-plus'></i> </span>
         </div>
         <div class="login-or-signup">
-            <span class="block" onclick="login()">Login <i class="fa fa-user-circle-o"></i></span><span class="block" onclick="signup()">Sign-up <i
-                    class="fa fa-user-plus"></i></span>
+            <span class="block" onclick="login()">Login <i class="fa fa-user-circle-o"></i></span><span class="block"
+                onclick="signup()">Sign-up <i class="fa fa-user-plus"></i></span>
         </div>
     </header>
     <div class="futurama-slider">
@@ -66,29 +67,37 @@
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs1</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs1<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs1" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs2</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs2<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs2" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs3</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs3<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs3" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs4</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs4<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
 
@@ -97,29 +106,37 @@
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs4" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs5</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs5<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs5" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs6</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs6<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs6" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs7</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs7<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
             <div class="items">
                 <img src="https://source.unsplash.com/300x200/?glasses,specs7" alt="">
                 <div class="item-info">
-                    <span class="item-name">Specs8</span>
-                    <span>specifications</span>
+                    <span class="item-name">Specs8<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart"  id="myBtn"></i></button><button class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
                 </div>
             </div>
         </div>

@@ -86,6 +86,11 @@
 .form-elements input{
     height: 20px;
 }
+.gender{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #name{
     width: 400px;

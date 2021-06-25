@@ -18,3 +18,20 @@ header{
     font-weight: bold;
     font-size: 35px;
 }
+.search{
+    display: flex;
+}
+.searchbar{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchbar input{
+    border: none;
+    margin-left: 10px;
+    width: 25vw;
+    height: 20px;
+}

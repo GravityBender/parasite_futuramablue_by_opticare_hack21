@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(172, 172, 172); */
+    color: black;
+}
+.companylogo img{
+    width: 100px;
+    height: 65px;
+    margin-left: 2vw;
+}
+.company-name{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 35px;
+}

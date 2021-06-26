@@ -42,6 +42,9 @@ html{
     border-left: 0pc;
     background-clip: padding-box;
 }
+.size{
+    font-size: 24px;
+}
 .control {
     display: block;
     position: relative;

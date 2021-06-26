@@ -55,3 +55,23 @@
         font-size: 2vw;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .stores{
+        width:75vw;
+        height: 400px;
+    }
+    .storeList ul{
+        height: 300px;
+        width: 65vw;
+    }
+    .city{
+        font-size: 3vw;
+    }
+    .sub-city{
+        font-size: 12px;
+    }
+    .map iframe {
+        width: 30vw;
+    }
+}

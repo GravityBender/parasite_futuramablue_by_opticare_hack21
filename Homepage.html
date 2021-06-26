@@ -24,9 +24,16 @@
         
     function searchfunction(obj)
     {
-        obj.innerHTML= '<div class="searchbar"><input type="text" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+        obj.innerHTML= '<div class="searchbar" onclick= "this.style.display="none""><input type="text" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
         inpt = document.getElementById('inpt');
         inpt.focus();
+
+        if(window.matchMedia("(max-width: 1300px)").matches){
+            document.getElementById("buy-or-addcart").style.display = "none";
+        }
+        else{
+            return;
+        }
     }
 
     </script>
@@ -38,6 +45,47 @@
         html{
             font-size: 16px;
         }
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.m1 {
+  display: none; 
+  position: fixed;
+  z-index: 2; 
+  padding-top: 250px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.m2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.cls{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cls:hover,
+.cls:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
     </style>
 </head>
 
@@ -281,7 +329,27 @@
                     </div>
 
                     <div>
-                        <button class="submit-form">Submit</button>
+                        <button class="submit-form" id="mB">Submit</button>
+                        <div id="mm" class="m1">
+                            <span class="cls">&times;</span>
+                            <p>Thank you for submitting the form, We will get back to you soon.</p>
+                        </div>
+                        <script>
+                                var modal = document.getElementById("mm");      
+                                var btn = document.getElementById("mB");
+                                var span = document.getElementsByClassName("cls")[0];
+                                btn.onload = function() {
+                                modal.style.display = "block";
+                                }
+                                span.onclick = function() {
+                                modal.style.display = "none";
+                                }   
+                                window.onclick = function(event) {
+                                if (event.target == modal) {
+                                modal.style.display = "none";
+                                }
+                                }
+                        </script>
                     </div>
 
                 </form>

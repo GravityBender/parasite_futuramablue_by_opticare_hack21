@@ -24,21 +24,9 @@
         
     function searchfunction(obj)
     {
-<<<<<<< HEAD
         obj.innerHTML= '<div class="searchbar"><input type="text" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
         inpt = document.getElementById('inpt');
-          inpt.focus();
-            
-=======
-        obj.className='changeinput'
-        obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
-        if(window.matchMedia("(max-width: 1300px)").matches){
-            document.getElementById("buy-or-addcart").style.display = "none";
-        }
-        else{
-            return;
-        }
->>>>>>> e121d1d2935a9626364d94c8838935743095df44
+        inpt.focus();
     }
 
     </script>
@@ -59,8 +47,8 @@
             <a href="Homepage.html"><img src="hackhathon logo (1).png" alt="logo">&nbsp;</a>
             <a href="Homepage.html"><span class="company-name">OptiCare</span></a>
         </div>
-        <div class="search unresponsive-500">
-            <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
+        <div class="search unresponsive-500" onclick="searchfunction(this)">
+            <span class="block" >Search <i class='fa fa-search'></i></span>
         </div>
         <div class="buy-or-addcart" id="buy-or-addcart">
             <span class="block"> Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block"

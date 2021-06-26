@@ -1,0 +1,100 @@
+html{
+    font-display: sans-sarif;
+    line-height: 1.15;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+.left {
+    left: 0;
+    background-color: aliceblue;
+}
+.right {
+    right: 0;
+}
+.backimg{
+    background-image: url("SignupFrame.jpg");
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.container {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.frm{
+    padding: 20px;
+}
+.inputbox{
+    border-radius: 5px;
+    border-color: rgb(190, 217, 240);
+    background-color: aliceblue;
+    border-top: 0pc;
+    border-left: 0pc;
+    background-clip: padding-box;
+}
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.control .caption {
+    position: absolute;
+    top: .2rem;
+    font-size: 16px;
+    color: #888;
+}
+.control .control__indicator{
+    position: relative;
+    background: #888;
+    height: 20px;
+    width: 20px;
+}
+.sub{
+    position: absolute;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    height: 44px;
+    width: 40%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.sub1{
+    background: rgb(122, 70, 70);
+    border-radius: 10px;
+}
+.sub2{
+    background: #3b5998;
+    border-radius: 10px;
+}
+.sub3{
+    background: #1da1f2;
+    border-radius: 10px;
+}
+.sub4{
+    background: #ea4335;
+    border-radius: 10px;
+}
+.sub_text{
+    text-align: center;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.otext{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 130px;
+    margin-bottom: 15px;
+}  

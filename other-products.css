@@ -48,7 +48,8 @@
     font-weight: bold;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(212, 233, 27);
+    background-color: rgb(60, 61, 50);
+    opacity: 0.6;
     color: black;
 }
 .see-all{

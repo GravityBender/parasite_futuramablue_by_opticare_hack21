@@ -24,8 +24,7 @@
         
     function searchfunction(obj)
     {
-        obj.className='changeinput'
-        obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+        obj.innerHTML= '<div class="searchbar"><input type="text" id="name"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
     }
 
     </script>
@@ -46,8 +45,8 @@
             <a href="Homepage.html"><img src="hackhathon logo (1).png" alt="logo">&nbsp;</a>
             <a href="Homepage.html"><span class="company-name">OptiCare</span></a>
         </div>
-        <div class="search">
-            <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
+        <div class="search" onclick="searchfunction(this)">
+            <span class="block" >Search <i class='fa fa-search'></i></span>
         </div>
         <div class="buy-or-addcart">
             <span class="block"> Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block"

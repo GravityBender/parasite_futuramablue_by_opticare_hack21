@@ -6,7 +6,7 @@ footer .footer-content{
     background-color: rgb(88, 88, 88);
     color: rgb(255, 255, 255);
     flex-direction: row;
-    height: 300px;
+    height: 350px;
     width: auto;
     justify-content: space-evenly;
     align-items: center;
@@ -120,3 +120,107 @@ footer .footer-bottom{
     width: auto;
 }
 
+
+@media screen and (max-width:1400px) {
+    .text{
+        width: 25vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    footer .footer-content .footer-input{
+        width: 28vw;
+    }
+}
+
+@media screen and (max-width:760px) {
+    
+    /* footer .footer-content{
+        height: 45vw;
+    }
+    footer .footer-content .footer-input{
+        width: 32vw;
+    }
+    .name{
+        font-size: 4vw;
+    }
+    .footer-data{
+        font-size: 2vw;
+    }
+    .fa{
+        width: 1.8vw;
+    }
+    .text{
+        width: 29vw;
+        height: 10vw;
+    }
+    .email-add{
+        height: 4vw;
+    }
+    .links ul li{
+        line-height: 3vw;
+    } */
+    .about{
+        display: none;
+    }
+    .links-responsive{
+        display: block;
+    }
+    footer .footer-content .footer-input{
+        width: 42vw;
+    }
+    footer .footer-content{
+        height: 50vw;
+    }
+    .text{
+        width: 35vw;
+        height: 15vw;
+    }
+    .email-add{
+        height: 4vw;
+    }
+    .links ul li{
+        line-height: 3vw;
+    }
+    .fa{
+        width: 15px;
+        height: 15px;
+    }
+}
+@media screen and (max-width:577px) {
+    footer .footer-content{
+        height: 60vw;
+    }
+    .name{
+        font-size: 4vw;
+    }
+    .footer-data{
+        font-size: 2.5vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    .footer-bottom{
+        font-size: 2.5vw;
+        line-height: 4.5vw;
+    }
+    .fa{
+        padding: 1.7vw;
+    }
+    .text{
+        font-size: 2.2vw;
+    }
+    button{
+        width: 10vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+    footer .footer-content{
+        height: 70vw;
+    }
+    .fa{
+        padding: 1.1vw;
+    }
+}

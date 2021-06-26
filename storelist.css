@@ -1,0 +1,36 @@
+.storeList ul{
+    height:400px; 
+    width: 475px;
+    overflow:hidden;
+    overflow-y:scroll;
+    margin: auto;
+    background-color: white;
+}
+
+.storeList li{
+    list-style: none;
+    border: 0.5px solid gray;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+}
+.place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+}
+.city{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.sub-city{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    margin-left: 10px;
+}

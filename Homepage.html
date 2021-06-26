@@ -78,7 +78,6 @@ float: right;
         
     function searchfunction(obj)
     {
-        obj.className='changeinput'
         obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
         if(window.matchMedia("(max-width: 1300px)").matches){
             document.getElementById("buy-or-addcart").style.display = "none";
@@ -146,8 +145,8 @@ float: right;
         </div>
         
     </header>
-    <div class="search responsive-500">
-        <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
+    <div class="search responsive-500" onclick="searchfunction(this)">
+        <span class="block" >Search <i class='fa fa-search'></i></span>
     </div>
     <br>
 

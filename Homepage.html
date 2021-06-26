@@ -28,6 +28,8 @@
         obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
         if(window.matchMedia("(max-width: 1300px)").matches){
             document.getElementById("buy-or-addcart").style.display = "none";
+            document.getElementById("responsive-cart").style.display = "none";
+
         }
         else{
             return;
@@ -59,16 +61,13 @@
             <span class="block"> Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block"
                 onclick="addtocart()">Add to Cart <i class='fas fa-cart-plus'></i> </span>
         </div>
-        <div class="responsive-cart">
+        <div class="responsive-cart" id="responsive-cart">
             <span class="block" onclick="addtocart()">Cart <i class='fas fa-cart-plus' id="cart-plus"></i></span>
         </div>
-        <div class="login-or-signup">
-            <span class="block" onclick="login()"><a href="LoginPage.html"
-                    style="text-decoration: none; color:inherit;">Login <i
-                        class="fa fa-user-circle-o"></i></a></span><span class="block" onclick="signup()"><a
-                    href="SignUp.html" style="text-decoration: none; color:inherit;">Sign-up <i
-                        class="fa fa-user-plus"></i></a></span>
+        <div class="login-or-signup" id="login-or-signup">
+            <span class="block" onclick="login()"><a href="LoginPage.html" style="text-decoration: none; color:inherit;">Login <i class="fa fa-user-circle-o"></i></a></span><span class="block"  onclick="signup()"><a href="SignUp.html" style="text-decoration: none; color:inherit;">Sign-up <i class="fa fa-user-plus"></i></a></span>
         </div>
+        
     </header>
     <div class="search responsive-500">
         <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
@@ -255,9 +254,9 @@
                 <form action="">
                     <div class="form-elements">
                         <label for="name">First Name: </label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" class="input-name">
                         <label for="name">Last Name: </label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" class="input-name">
                     </div>
                     <div class="form-elements">
                         <label for="age">Age: </label>
@@ -279,10 +278,11 @@
                     <div class="form-elements">
                         <label for="email">E-mail: </label>
                         <input type="email" name="email" id="email">
-                        
-                        <label for="phone"> OR    Phone: </label>
-                        <input type="text" name="" id="std" value="+91">
-                        <input type="tel" name="phone" id="phone">
+                        <label for="phone"> OR Phone: </label>
+                        <div>
+                            <input type="text" name="" id="std" value="+91">
+                            <input type="tel" name="phone" id="phone">
+                        </div>
                     </div>
 
                     <div>
@@ -318,7 +318,7 @@
                             </div>
                             <div class="map"><iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224180.81975419892!2d77.1802670290636!3d28.60501705678396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0158ffffffff%3A0xa4c652db9d597be4!2sOpticare%20Opticals!5e0!3m2!1sen!2sin!4v1624696434750!5m2!1sen!2sin"
-                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                     class="map-bg" allowfullscreen=""
                                     loading="lazy"></iframe></div>
                         </div>
                     </li>

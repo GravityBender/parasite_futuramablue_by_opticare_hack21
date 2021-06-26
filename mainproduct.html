@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,14 +14,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script>
         
-        function searchfunction(obj)
-        {
-          obj.innerHTML =
-          '<div class="searchbar"><input type="text"id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+        function searchfunction(obj) {
+        obj.innerHTML =
+          `<div class="searchbar" ><input onblur="restoreAppearance()" type="text" name="" id="inpt" placeholder="Search here..."><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>`;
           inpt = document.getElementById('inpt');
           inpt.focus();
-            
-        }
+      }
+
+      function restoreAppearance(){
+          inputDiv = document.getElementById('search');
+          inputDiv.innerHTML = '<span class="block">Search <i class="fa fa-search"></i></span>';
+      }
     
     </script>
     <style>
@@ -121,7 +125,7 @@ img {vertical-align: middle;}
             <img src="hackhathon logo (1).png" alt="logo">&nbsp;
             <span class="company-name">OptiCare</span>
         </div>
-        <div class="search"  onclick="searchfunction(this)" style="z-index: 1000;">
+        <div class="search" id="search" onclick="searchfunction(this)" style="z-index: 1000;">
             <span class="block">Search <i class='fa fa-search'></i></span></div>
         <div class="backtohome">
             <span class="block"><a href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>

@@ -1,0 +1,16 @@
+.tagline
+{
+    background-color: black;
+    border-radius: 8px;
+    font-family: 'Prompt', sans-serif;
+    font-size: large;
+    color: white;
+    padding: 10px;
+}
+
+.productdesimage
+{
+    align-items: center;
+    width: 500px;
+    height: 400px;
+}

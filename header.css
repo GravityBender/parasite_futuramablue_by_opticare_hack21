@@ -62,7 +62,7 @@ header{
     display: none;
 }
 
-#cart-plus{
+.responsive-cart{
     display: none;
 }
 
@@ -90,7 +90,9 @@ header{
     .buy-or-addcart{
         display: none;
     }
-
+    .responsive-cart{
+        display: inline-block;
+    }
     #cart-plus{
         display: inline-block;
     }

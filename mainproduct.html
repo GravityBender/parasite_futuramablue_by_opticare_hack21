@@ -15,7 +15,11 @@
         
         function searchfunction(obj)
         {
-            obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+          obj.innerHTML =
+          '<div class="searchbar"><input type="text" name="" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+          inpt = document.getElementById('inpt');
+          inpt.focus();
+            
         }
     
     </script>

@@ -44,8 +44,21 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  
+         }
+ 
+.cls1{
+color: #aaaaaa;
+float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
+
+.cls1:hover,
+.cls1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
     </style>
     <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -569,7 +582,44 @@
                 <div class="feedback-content">
                     <input type="email" name="email" class="text email-add" placeholder=" Enter your email address"><br>
                     <textarea name="message" class="text" rows="6" placeholder=" Enter your feedback"></textarea><br>
-                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="submit" id="mB1"> Submit</button>
+                    <div id="mm1" class="m1">
+
+                        <!-- Modal content -->
+                        <div class="m2">
+                          <span class="cls1">&times;</span>
+                          <p style="color: #000;">Thank you for submitting the  form</p>
+                        </div>
+                      
+                      </div>
+                      
+                      <script>
+                      
+                      var ml = document.getElementById("mm1");
+                      
+                     
+                      var button = document.getElementById("mB1");
+                      
+                   
+                      var sp=document.getElementsByClassName("cls1")[0];
+                      
+                      
+                      button.onclick = function() {
+                        ml.style.display = "block";
+                      }
+                      
+                      
+                      sp.onclick = function() {
+                        ml.style.display = "none";
+                      }
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == ml) {
+                          ml.style.display = "none";
+                        }
+                      }
+                      </script>
                 </div>
             </div>
 

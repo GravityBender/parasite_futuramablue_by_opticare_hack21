@@ -46,3 +46,9 @@
         left: -400%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #futurama-heading{
+        font-size: 5vw;
+    }
+}

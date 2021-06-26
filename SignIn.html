@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="SignIn.css"/>
+        <script>
+            function redirect(){
+                window.location = "Homepage.html";
+            }
+        </script>
+        <title>Sign In</title>
+    </head>
+    <body>
+        <div class="split left">
+            <div class="container">
+                <div><h1>SignIn</h1></div>
+                <div>
+                    <form class="frm">
+ 						<div>
+ 							<label for="username">UserName: &nbsp;</label>
+                        	<input type="text" id="username" name="username" size="50" placeholder="Username" class="inputbox" required/><br/><br/>
+ 						</div>                       
+                       <div>
+                       	<label for="password">Password: &nbsp;</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="Password" class="inputbox" required/><br/><br/>
+                       </div>                           		                       	                                                    
+                        <div>
+                        	<input type="button" onclick="redirect()" value="Sign In" class="sub sub_text sub1"/><br/><br/>
+                        	<br/><br/><br/>
+                        </div>                                                
+                    	<div class="otext">- or -</div>
+                        <div>
+                        	<a href="#"><input type="button" value="Sign In with Facebook" class="sub sub_text sub2"/><br/><br/></a>
+                        	<br/>
+                        	<a href="#"><input type="button" value="Sign In with Twitter" class="sub sub_text sub3"/><br/><br/></a>
+                        	<br/>
+                        	<a href="#"><input type="button" value="Sign In with Google" class="sub sub_text sub4"/><br/><br/></a>
+                        	<br/>
+                        </div>                                                                       	                        
+                    </form>
+                    <p>New to this library? <a href="JoinUs.xhtml" style="text-decoration: underline; color: inherit;">Click Here</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="split right">
+            <div class="backimg"></div>
+        </div>
+    </body>
+</html>

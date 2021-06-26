@@ -6,6 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptiCare</title>
+     <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.m1 {
+  display: none; 
+  position: fixed;
+  z-index: 2; 
+  padding-top: 250px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.m2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.cls{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cls:hover,
+.cls:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+         }
+ 
+.cls1{
+color: #aaaaaa;
+float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cls1:hover,
+.cls1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
+    </style>
     <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -54,8 +108,8 @@
             <a href="Homepage.html"><img src="hackhathon logo (1).png" alt="logo">&nbsp;</a>
             <a href="Homepage.html"><span class="company-name">OptiCare</span></a>
         </div>
-        <div class="search unresponsive-500">
-            <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
+        <div class="search unresponsive-500" onclick="searchfunction(this)">
+            <span class="block" >Search <i class='fa fa-search'></i></span>
         </div>
         <div class="buy-or-addcart" id="buy-or-addcart">
             <span class="block"> Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block"
@@ -286,7 +340,45 @@
                     </div>
 
                     <div>
-                        <button class="submit-form">Submit</button>
+                     
+                         <button type="reset" class="submit-form" id="mB">Submit</button>
+                        
+                        <div id="mm" class="m1">
+
+                            <!-- Modal content -->
+                            <div class="m2">
+                              <span class="cls">&times;</span>
+                              <p>Thank you for submitting the form.We will get back to you.</p>
+                            </div>
+                          
+                          </div>
+                          
+                          <script>
+                        
+                          var modal = document.getElementById("mm");
+                   
+                          var btn = document.getElementById("mB");
+                 
+                            var span = document.getElementsByClassName("cls")[0];
+                          
+                        
+                          btn.onclick = function() {
+                            modal.style.display = "block";
+                          }
+                          
+                       
+                          span.onclick = function() {
+                            modal.style.display = "none";
+                          }
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                        modal.style.display = "none";
+                             }
+                                }
+                          
+                         
+                         
+                          </script>
                     </div>
 
                 </form>
@@ -495,7 +587,44 @@
                 <div class="feedback-content">
                     <input type="email" name="email" class="text email-add" placeholder=" Enter your email address"><br>
                     <textarea name="message" class="text" rows="6" placeholder=" Enter your feedback"></textarea><br>
-                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="submit" id="mB1"> Submit</button>
+                    <div id="mm1" class="m1">
+
+                        <!-- Modal content -->
+                        <div class="m2">
+                          <span class="cls1">&times;</span>
+                          <p style="color: #000;">Thank you for your feedback.</p>
+                        </div>
+                      
+                      </div>
+                      
+                      <script>
+                      
+                      var ml = document.getElementById("mm1");
+                      
+                     
+                      var button = document.getElementById("mB1");
+                      
+                   
+                      var sp=document.getElementsByClassName("cls1")[0];
+                      
+                      
+                      button.onclick = function() {
+                        ml.style.display = "block";
+                      }
+                      
+                      
+                      sp.onclick = function() {
+                        ml.style.display = "none";
+                      }
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == ml) {
+                          ml.style.display = "none";
+                        }
+                      }
+                      </script>
                 </div>
             </div>
 

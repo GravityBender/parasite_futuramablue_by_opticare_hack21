@@ -1,11 +1,12 @@
 
 
 .other-products{
-    width: 1500px;
-    height: 900px;
+    width: 98vw;
+    height: 58.8vw;
     background-color: rgb(235, 235, 235);
     border: 1px solid rgb(212, 212, 212);
     margin: auto;
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -21,6 +22,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
 .items{
     height: 280px;
     display: flex;
@@ -55,7 +58,7 @@
     color: black;
 }
 .see-all{
-    margin-left: 1370px;
+    margin-left: 90vw;
     font-size: 20px;
 }
 
@@ -65,7 +68,7 @@
 }
 
 .contact-doc{
-    width: 900px;
+    width: 60vw;
     margin-top: 30px;
     height: 500px;
 }
@@ -115,7 +118,7 @@
     width: 25px;
 }
 .stores{
-    width: 550px;
+    width: 35vw;
     margin-top: 30px;
     height: 500px;
 }
@@ -123,18 +126,19 @@
 .consult-and-list{
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 98vw;
+    margin: auto;
 }
 
 .or{
     display: flex;
     flex-direction: row;
-    width: 900px;
+    width: 60vw;
     justify-content: space-evenly;
     font-size: 30px;
 }
 .or hr{
-    width: 300px;
+    width: 20vw;
     margin-top: 17.2px;
 }
 
@@ -154,4 +158,18 @@
     color: rgb(72, 72, 72);
     border: 1px solid rgb(72, 72, 72);
     float: right;
+}
+
+.not-vis-at-1536px{
+    display: none;
+}
+
+@media screen and (max-width:1450px) {
+    .responsive-1450px{
+        display: none;
+    }
+
+    .not-vis-at-1536px{
+        display: flex;
+    }
 }

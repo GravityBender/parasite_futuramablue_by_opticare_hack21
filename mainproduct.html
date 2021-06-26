@@ -15,7 +15,6 @@
         
         function searchfunction(obj)
         {
-            obj.className='changeinput'
             obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
         }
     
@@ -118,11 +117,10 @@ img {vertical-align: middle;}
             <img src="hackhathon logo (1).png" alt="logo">&nbsp;
             <span class="company-name">OptiCare</span>
         </div>
-        <div class="search">
-            <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
+        <div class="search"  onclick="searchfunction(this)" style="z-index: 1000;">
+            <span class="block">Search <i class='fa fa-search'></i></span></div>
         <div class="backtohome">
-            <span class="block"><a
-                href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>
+            <span class="block"><a href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>
         </div>
     </header>
     <div>

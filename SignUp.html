@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="SignIn.css">
+        <title>Join Us</title>
+    </head>
+    <body>
+        <div class="split left">
+            <div class="container">
+                <div><h1>Join Us</h1></div>
+                <div>
+                    <form class="frm">
+                        <label for="username">Username: &nbsp</label>
+                        <input type="text" id="username" name="username" size="50" placeholder="John Doe" class="inputbox" required/><br/><br/>
+                        <label for="password">Password: &nbsp;</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="Password" class="inputbox" required/><br/><br/>
+                        <label for="rpassword">Retype Password: &nbsp</label>
+                        <input type="password" id="rpwd" name="rpwd" placeholder="Retype Password" class="inputbox" required/><br/><br/>
+                        <label for="email">E-Mail: &nbsp</label>
+                        <input type="email" id="email" name="email" placeholder="xyz_123@service.com" class="inputbox" required/><br/><br/>
+                        <label for="dob">DOB: &nbsp</label>
+                        <input type="date" class="inputbox"/><br/><br/>
+                        <label for="phoneno">Phone Number: &nbsp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="1234-567-890" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" class="inputbox"/><br/><br/>
+                        <div class="control">
+                            <div>
+                                <input type="checkbox" class="control__indicator" checked/>
+                                <span class="caption">Agree to our <a href="#" style="text-decoration: underline; color: #888">Terms & Conditons</a></span>
+                            </div>
+                        </label>
+                        <a href="ThankYouForJoining.html"><input type="button" value="Register" class="sub sub_text sub1"/><br/><br/></a>
+                        <br/><br/><br/>
+                        <span class="otext">- or -</span>
+                        <br/>
+                        <a href="#"><input type="button" value="Register with Facebook" class="sub sub_text sub2"/><br/><br/></a>
+                        <br/>
+                        <a href="#"><input type="button" value="Register with Twitter" class="sub sub_text sub3"/><br/><br/></a>
+                        <br/>
+                        <a href="#"><input type="button" value="Register with Google" class="sub sub_text sub4"/><br/><br/></a>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="split right">
+            <div class="backimg"></div>
+        </div>
+    </body>
+</html>

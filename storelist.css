@@ -75,3 +75,12 @@
         width: 30vw;
     }
 }
+
+@media screen and (max-width: 450px){
+    .city{
+        font-size: 13px;
+    }
+    .sub-city{
+        font-size: 11px;
+    }
+}

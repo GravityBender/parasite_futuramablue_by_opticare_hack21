@@ -83,6 +83,10 @@ float: right;
         if(window.matchMedia("(max-width: 1300px)").matches){
             document.getElementById("buy-or-addcart").style.display = "none";
             document.getElementById("responsive-cart").style.display = "none";
+            if(window.matchMedia("(max-width: 800px)").matches){
+                document.getElementById("login-or-signup").style.display = "none";
+                document.getElementById("responsive-at-800px").style.display = "block";
+            }
 
         }
         else{
@@ -120,6 +124,10 @@ float: right;
         </div>
         <div class="login-or-signup" id="login-or-signup">
             <span class="block" onclick="login()"><a href="LoginPage.html" style="text-decoration: none; color:inherit;">Login <i class="fa fa-user-circle-o"></i></a></span><span class="block"  onclick="signup()"><a href="SignUp.html" style="text-decoration: none; color:inherit;">Sign-up <i class="fa fa-user-plus"></i></a></span>
+        </div>
+
+        <div class="responsive-at-800px" id="responsive-at-800px">
+            <span class="block"><i class='fas fa-cart-plus'></i><i class="fa fa-user-circle-o"></i><i class="fa fa-user-plus"></i></span>
         </div>
         
     </header>

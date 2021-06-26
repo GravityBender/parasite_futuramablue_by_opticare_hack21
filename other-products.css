@@ -1,3 +1,5 @@
+
+
 .other-products{
     width: 1500px;
     height: 900px;
@@ -10,7 +12,7 @@
 }
 
 .other-products h2{
-    width: 1400px;
+    /* width: 1400px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 50px;
 }
@@ -106,7 +108,12 @@
 #age{
     width: 100px;
 }
-
+#email{
+    width: 200px;
+}
+#std{
+    width: 25px;
+}
 .stores{
     width: 550px;
     margin-top: 30px;
@@ -116,6 +123,7 @@
 .consult-and-list{
     display: flex;
     flex-direction: row;
+    max-width: 100%;
 }
 
 .or{

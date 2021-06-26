@@ -10,7 +10,14 @@
 
 .productdesimage
 {
-    align-items: center;
-    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
     height: 400px;
+}
+.specs li
+{
+    font-family:  'Prompt', sans-serif;
+    font-size: large;
 }

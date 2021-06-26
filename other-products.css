@@ -259,12 +259,12 @@
     }
     .item-name {
         width: 72vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .buy-or-cart {
         width: 36vw;
         height: 30px;
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
     .see-all {
         font-size: 2.5vw;

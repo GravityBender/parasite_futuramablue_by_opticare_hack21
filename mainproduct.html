@@ -23,9 +23,16 @@
 
       function restoreAppearance(){
           inputDiv = document.getElementById('search');
-          inputDiv.innerHTML = '<span class="block">Search <i class="fa fa-search"></i></span>';
+          inputDiv.innerHTML = '<span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Search <i class="fa fa-search"></i></span>';
       }
-    
+      function hoverin(obj)
+    {
+        obj.style.backgroundColor = "#D64541";
+    }
+    function hoverout(obj)
+    {
+        obj.style.backgroundColor ="white";
+    }
     </script>
     <style>
         * {box-sizing: border-box}
@@ -159,9 +166,9 @@ button:hover{
             <span class="company-name">OptiCare</span>
         </div>
         <div class="search" id="search" onclick="searchfunction(this)" style="z-index: 1000;">
-            <span class="block">Search <i class='fa fa-search'></i></span></div>
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" >Search <i class='fa fa-search'></i></span></div>
         <div class="backtohome">
-            <span class="block"><a href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>
+            <span onmouseover="hoverin(this)" onmouseout="hoverout(this)" class="block"><a href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>
         </div>
     </header>
     <div>

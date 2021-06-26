@@ -1,0 +1,28 @@
+.tagline
+{
+    background-color: black;
+    border-radius: 8px;
+    font-family: 'Prompt', sans-serif;
+    font-size: large;
+    color: white;
+    padding: 10px;
+}
+
+.productdesimage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 400px;
+}
+.specs li
+{
+    font-family:  'Prompt', sans-serif;
+    font-size: large;
+}
+.price{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: larger;
+}

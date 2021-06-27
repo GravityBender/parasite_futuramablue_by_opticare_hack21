@@ -34,7 +34,7 @@ header{
 .searchbar{
     background-color: white;
     border: 1px solid grey;
-    border-radius: 20px;
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;

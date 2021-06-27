@@ -245,3 +245,20 @@ footer .footer-bottom{
     }
     
 }
+
+
+
+@media screen and (max-width:300px) {
+    footer .footer-content{
+        height: 200vw;
+    }
+    .links ul li {
+        line-height: 8vw;
+    }
+    footer .footer-content .footer-input {
+        font-size: 13px;
+    }
+    .email-add {
+        height: 6vw;
+    }
+}

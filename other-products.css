@@ -170,6 +170,10 @@
     display: none;
 }
 
+.responsive-at-600{
+    display: none;
+}
+
 @media screen and (max-width:1450px) {
     .responsive-1450px{
         display: none;
@@ -230,4 +234,101 @@
         width: 45vw;
     }
     
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-at-600{
+        display: block;
+    }
+    .unresponsive-at-600{
+        display: none;
+    }
+    .products{
+        flex-direction: column;
+        align-items: center;
+        height: 240vw;
+    }
+    .other-products{
+        height: 260vw;
+    }
+    .items{
+        height: 60vw;
+    }
+    .items img{
+        width: 72vw;
+    }
+    .item-name {
+        width: 72vw;
+        font-size: 3.5vw;
+    }
+    .buy-or-cart {
+        width: 36vw;
+        height: 30px;
+        font-size: 3vw;
+    }
+    .see-all {
+        font-size: 2.5vw;
+        margin-left: 70vw;
+    }
+
+    .consult-and-list{
+        flex-direction: column;
+    }
+    .contact-doc{
+        width: 98vw;
+        height: 800px;
+    }
+    .form{
+        width: 90vw;
+        height: 400px;
+    }
+    .form form{
+        width: 80vw;
+        height: 400px;
+        font-size: 4vw;
+    }
+    #responsive-at-600{
+        display: flex;
+    }
+    #unresponsive-at-600{
+        display: none;
+    }
+
+    .form-elements input {
+        height: 4vw;
+    }
+    .gender{
+        width: 30vw;
+    }
+    .form-elements textarea{
+        width: 75vw;
+        height: 100px;
+    }
+
+    #email{
+        width: 50vw;
+    }
+    #email-or-phone{
+        justify-content: center;
+    }
+    #std {
+        width: 7vw;
+    }
+    #phone {
+        width: 35vw;
+    }
+
+    .or {
+        width: 98vw;
+        font-size: 5vw;
+    }
+    .or hr {
+        width: 30vw;
+        margin-top: 13.2px;
+    }
+    .msg-at-whatsapp {
+        width: 98vw;
+        font-size: 5vw;
+    }
+
 }

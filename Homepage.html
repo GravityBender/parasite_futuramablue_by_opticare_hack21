@@ -150,9 +150,12 @@ float: right;
     <div class="search responsive-500" onclick="searchfunction(this)" style="margin-top: 10px;">
         <span class="block" >Search <i class='fa fa-search'></i></span>
     </div>
+    <br>
+
+    <h1 style="text-align:center; font-weight:bold;font-family: Verdana, Geneva, Tahoma, sans-serif;" id="futurama-heading">Presenting Futurama-Blue!</h1>
+
     <div class="futurama-slider">
-        <h1 style="text-align:center; font-weight:bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Presenting
-            Futurama-Blue!</h1><br>
+        
         <figure>
             <a href="mainproduct.html"><img
                     src="https://i.pinimg.com/originals/89/c5/22/89c522605db94231836ab5e7e510c7b0.jpg" alt=""></a>
@@ -170,7 +173,8 @@ float: right;
     </div>
 
 
-    <div class="other-products">
+    <div class="other-products unresponsive-at-600">
+        <br>
         <h2>Other Spectacles:</h2>
         <div class="products">
             <div class="items">
@@ -272,8 +276,57 @@ float: right;
     </div>
 
 
+    <div class="other-products responsive-at-600">
+        <br>
+        <h2>Other Spectacles:</h2>
+        <div class="products">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs1<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs1" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs2<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs2" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs3<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs3" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs4<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <span class="see-all"><a href="#" style="text-decoration: none; color: inherit;">See all <i
+                class='fas'>&#xf101;</i></a></span>
+        </div>
+    </div>
 
     <div class="other-products accessories">
+        <br>
         <h2>Other Accessories:</h2>
         <div class="products">
             <div class="items">
@@ -329,7 +382,7 @@ float: right;
         <div class="other-products inline-block contact-doc">
             <h2>Consult a doctor:</h2>
             <div class="form">
-                <form action="">
+                <form action="" id="unresponsive-at-600">
                     <div class="form-elements">
                         <label for="name">First Name: </label>
                         <input type="text" name="name">
@@ -404,6 +457,90 @@ float: right;
                           </script>
                     </div>
 
+                </form>
+                <form action="" id="responsive-at-600">
+                    <div class="form-elements">
+                        <label for="name">First Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="name">Last Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age">
+                        <label for="male">Gender: </label>
+                        <div class="gender">
+                            <label for="male">M</label>
+                            <input type="radio" name="gender" id="male">
+                            <label for="female">F</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="others">O</label>
+                            <input type="radio" name="gender" id="others">
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <label for="">Describe your problem or need: </label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-elements">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-elements" id="email-or-phone">
+                        <label for="phone"> OR  </label>
+                    </div>
+                    <div class="form-elements">
+                        <label for="phone">Phone: </label>
+                        <div>
+                        <input type="text" name="" id="std" value="+91">
+                        <input type="tel" name="phone" id="phone">
+                        </div>
+
+                    </div>
+
+                    <div>
+                     
+                        <button type="reset" class="submit-form" id="mB">Submit</button>
+                       
+                       <div id="mm" class="m1">
+
+                           <!-- Modal content -->
+                           <div class="m2">
+                             <span class="cls">&times;</span>
+                             <p>Thank you for submitting the form.We will get back to you.</p>
+                           </div>
+                         
+                         </div>
+                         
+                         <script>
+                       
+                         var modal = document.getElementById("mm");
+                  
+                         var btn = document.getElementById("mB");
+                
+                           var span = document.getElementsByClassName("cls")[0];
+                         
+                       
+                         btn.onclick = function() {
+                           modal.style.display = "block";
+                         }
+                         
+                      
+                         span.onclick = function() {
+                           modal.style.display = "none";
+                         }
+                     window.onclick = function(event) {
+                       if (event.target == modal) {
+                       modal.style.display = "none";
+                            }
+                               }
+                         
+                        
+                        
+                         </script>
+                   </div>
                 </form>
             </div>
             <div class="or">

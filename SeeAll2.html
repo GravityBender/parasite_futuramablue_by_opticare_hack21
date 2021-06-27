@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCare</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .m1 {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            padding-top: 250px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .m2 {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+        }
+
+        .cls {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .cls:hover,
+        .cls:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cls1 {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .cls1:hover,
+        .cls1:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 920px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    </style>
+    <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="futurama-slider.css">
+    <link rel="stylesheet" href="other-products.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="storelist.css">
+    <link rel="stylesheet" href="ProductCard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c41d9efb3c.js" crossorigin="anonymous"></script>
+    <script>
+
+        function searchfunction(obj) {
+            obj.innerHTML = '<div class="searchbar" style="width : 80%"><input type="text" id="inpt" style="width : 90%"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+            inpt = document.getElementById('inpt');
+            inpt.focus();
+            if (window.matchMedia("(max-width: 1300px)").matches) {
+                document.getElementById("buy-or-addcart").style.display = "none";
+                document.getElementById("responsive-cart").style.display = "none";
+                if (window.matchMedia("(max-width: 800px)").matches) {
+                    document.getElementById("login-or-signup").style.display = "none";
+                    document.getElementById("responsive-at-800px").style.display = "block";
+                }
+
+            }
+            else {
+                return;
+            }
+            obj.innerHTML = '<div class="searchbar"><input type="text" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+            inpt = document.getElementById('inpt');
+            inpt.focus();
+        }
+        function hoverin(obj) {
+            obj.style.color = "white";
+            obj.style.backgroundColor = "#D64541";
+        }
+        function hoverout(obj) {
+            obj.style.color = "black";
+            obj.style.backgroundColor = "#b1eeda81";
+        }
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#bcd8cf81;">
+    <header>
+        <div class="company-logo">
+            <a href="Homepage.html"><img src="hackhathon logo (1).png" alt="logo">&nbsp;</a>
+            <a href="Homepage.html"><span class="company-name">OptiCare</span></a>
+        </div>
+        <div class="search unresponsive-500" onclick="searchfunction(this)">
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Search <i
+                    class='fa fa-search'></i></span>
+        </div>
+        <div class="buy-or-addcart" id="buy-or-addcart">
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)"> Buy Now <i
+                    class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block" onmouseover="hoverin(this)"
+                onmouseout="hoverout(this)" onclick="addtocart()">Add to Cart <i class='fas fa-cart-plus'></i> </span>
+        </div>
+        <div class="responsive-cart">
+            <span class="block" onclick="addtocart()">Cart <i class='fas fa-cart-plus' id="cart-plus"></i></span>
+        </div>
+        <div class="login-or-signup">
+            <span onmouseover="hoverin(this)" onmouseout="hoverout(this)" class="block" onclick="login()"><a
+                    href="LoginPage.html" style="text-decoration: none; color:inherit;">Login <i
+                        class="fa fa-user-circle-o"></i></a></span><span onmouseover="hoverin(this)"
+                onmouseout="hoverout(this)" class="block" onclick="signup()"><a href="SignUp.html"
+                    style="text-decoration: none; color:inherit;">Sign-up <i class="fa fa-user-plus"></i></a></span>
+        </div>
+
+        <div class="responsive-at-800px" id="responsive-at-800px">
+            <span class="block"><i class='fas fa-cart-plus'></i><i class="fa fa-user-circle-o"></i><i
+                    class="fa fa-user-plus"></i></span>
+        </div>
+
+    </header>
+    <div class="search responsive-500" onclick="searchfunction(this)" style="margin-top: 10px;">
+        <span class="block">Search <i class='fa fa-search'></i></span>
+    </div><br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="Cleaner3.jpeg" style="width:100%">
+          <div class="text">Cleaner for Lenses</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="Cleaner3.jpeg" style="width:100%; height: 920px">
+          <div class="text">Cleaner for lenses</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="https://www.amournova.com/wp-content/uploads/2020/03/227700-29cbb8.jpg" style="width:100%; height: 920px;">
+          <div class="text">Futurama-Blue</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="image 1.jpeg" style="width:100%; height: 920px;">
+            <div class="text">Frame1</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="image 4.jpeg" style="width:100%; height: 920px;">
+            <div class="text">Frame2</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="image 8.jpeg" style="width:100%; height: 920px;">
+            <div class="text">Frame3</div>
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <br><br>
+
+        <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Case1.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Case2.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                    <img src="Case3.jpeg" alt="Case 1" style="width:100%">
+                    <h1>Frame1</h1>
+                    <p class="price">&#x20B9; 20.99</p>
+                    <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+          </div>
+
+          <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Case4.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        <br><br>
+
+        <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Case5.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        
+          <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Case6.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        
+          <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Cleaner1.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#bbb;">
+            <div class="card">
+                <img src="Cleaner2.jpeg" alt="Case 1" style="width:100%">
+                <h1>Frame1</h1>
+                <p class="price">&#x20B9; 20.99</p>
+                <p>Some text about the Spec Cases. Tough and stylish Cases. Cases.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+
+          <br><br>
+
+        <script>
+            var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+        </script>
+    </body>

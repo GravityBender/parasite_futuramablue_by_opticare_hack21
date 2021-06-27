@@ -119,6 +119,9 @@ header{
     .responsive-at-800px{
         display: block;
     }
+    #small-text{
+        font-size: 4vw;
+    }
 }
 
 

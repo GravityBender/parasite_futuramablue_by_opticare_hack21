@@ -60,6 +60,22 @@
             color: #000;
             text-decoration: none;
             cursor: pointer;
+            }
+
+
+  .cancelbtn1 {
+  padding: 20px;
+
+  margin-left: 23.4vw;
+}
+
+.signupbtn1{
+    padding: 20px;
+}
+
+.cancelbtn1, .signupbtn1 {
+  float: left;
+  width: 26.41%;
         }
     </style>
     <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
@@ -130,7 +146,36 @@
     </style>
 </head>
 
-<body>
+<body id="mB2" >
+
+    <div id="mm2" class="m1" >
+
+        
+        <div class="m2">
+         
+        <p st> You are not logged in yet.</p>
+        </div>
+        <div class="clearfix">
+            <button type="reset" class="cancelbtn1"  onclick="document.getElementById('mm2').style.display='none'">Cancel</button>
+           <a href="SignUp.html"><button type="reset" class="signupbtn1">Sign Up</button></a> 
+          </div>
+      
+      </div>
+      
+      <script>
+      
+      var ml1 = document.getElementById("mm2");
+    
+      var home = document.getElementById("mB2");
+ 
+      home.onload = function() {
+        ml1.style.display = "block";
+      }
+    
+    
+      </script>
+
+
     <header>
         <div class="company-logo">
             <a href="Homepage.html"><img src="hackhathon logo (1).png" alt="logo">&nbsp;</a>

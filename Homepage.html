@@ -99,7 +99,7 @@
     <script>
 
         function searchfunction(obj) {
-            obj.innerHTML = '<div class="searchbar" style="width : 80%"><input type="text" id="inpt" style="width : 90%"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+            obj.innerHTML = '<div class="searchbar" style="width : 80%"><input type="text" id="inpt" placeholder="Search here.." style="width : 90%"><i class="material-icons">search</i></div>';
             inpt = document.getElementById('inpt');
             inpt.focus();
             if (window.matchMedia("(max-width: 1300px)").matches) {
@@ -114,7 +114,7 @@
             else {
                 return;
             }
-            obj.innerHTML = '<div class="searchbar"><input type="text" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+            obj.innerHTML = '<div class="searchbar"><input type="text" id="inpt" placeholder="Search here.."><i class="material-icons">search</i></div>';
             inpt = document.getElementById('inpt');
             inpt.focus();
         }

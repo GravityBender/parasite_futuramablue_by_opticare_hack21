@@ -178,6 +178,10 @@
     display: none;
 }
 
+.catalog{
+    display: none;
+}
+
 @media screen and (max-width:1450px) {
     .responsive-1450px{
         display: none;

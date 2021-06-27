@@ -64,19 +64,23 @@
 
 
   .cancelbtn1 {
-  padding: 20px;
+  padding: 25px;
 
   margin-left: 23.4vw;
 }
 
 .signupbtn1{
-    padding: 20px;
+    padding: 25px;
+
 }
 
 .cancelbtn1, .signupbtn1 {
   float: left;
   width: 26.41%;
+
         }
+
+
     </style>
     <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -146,7 +150,7 @@
     </style>
 </head>
 
-<body id="mB2" >
+<body >
 
     <div id="mm2" class="m1" >
 
@@ -182,13 +186,68 @@
             <a href="Homepage.html"><span class="company-name">OptiCare</span></a>
         </div>
         <div class="search unresponsive-500" onclick="searchfunction(this)">
-            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Search <i
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" >Search <i
                     class='fa fa-search'></i></span>
         </div>
         <div class="buy-or-addcart" id="buy-or-addcart">
-            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)"> Buy Now <i
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" id="mB2"> Buy Now <i
                     class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block" onmouseover="hoverin(this)"
-                onmouseout="hoverout(this)" onclick="addtocart()">Add to Cart <i class='fas fa-cart-plus'></i> </span>
+                onmouseout="hoverout(this)" onclick="addtocart()" id="mB3">Add to Cart <i class='fas fa-cart-plus'></i> </span>
+
+                <div id="mm2" class="m1" >
+
+        
+                    <div class="m2">
+                     
+                    <p st> You are not logged in yet.</p>
+                    </div>
+                    <div class="clearfix">
+                        <button type="reset" class="cancelbtn1"  onclick="document.getElementById('mm2').style.display='none'">Cancel</button>
+                       <a href="SignUp.html"><button type="reset" class="signupbtn1">Sign Up</button></a> 
+                      </div>
+                  
+                  </div>
+                  
+                  <script>
+                  
+                  var ml1 = document.getElementById("mm2");
+                
+                  var home = document.getElementById("mB2");
+             
+                  home.onclick = function() {
+                    ml1.style.display = "block";
+                  }
+                
+                
+                  </script>
+
+     <div id="mm3" class="m1" >
+
+        
+      <div class="m2">
+     
+     <p st> You are not logged in yet.</p>
+    </div>
+     <div class="clearfix">
+        <button type="reset" class="cancelbtn1"  onclick="document.getElementById('mm3').style.display='none'">Cancel</button>
+       <a href="SignUp.html"><button type="reset" class="signupbtn1">Sign Up</button></a> 
+      </div>
+  
+  </div>
+  
+  <script>
+  
+  var ml2 = document.getElementById("mm3");
+
+  var addcart = document.getElementById("mB3");
+
+addcart.onclick = function() {
+    ml2.style.display = "block";
+  }
+
+
+  </script>
+            
         </div>
         <div class="responsive-cart">
             <span class="block" onclick="addtocart()">Cart <i class='fas fa-cart-plus' id="cart-plus"></i></span>

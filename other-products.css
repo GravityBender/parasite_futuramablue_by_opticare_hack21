@@ -15,7 +15,7 @@
 .other-products h2{
     /* width: 1400px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 50px;
+    margin-left: 4vw;
 }
 
 .products{
@@ -30,6 +30,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .item-info{
     display: flex;
     align-items: center;
@@ -74,18 +75,19 @@
 }
 
 .form{
-    width: 900px;
+    width: 56.8vw;
     height: 250px;
+    margin: 0 auto;
 }
 .form form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 600px;
+    width: 45vw;
     height: 250px;
     margin: auto;
     font-family: 'Exo', sans-serif;
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 .form-elements{
     display: flex;
@@ -93,29 +95,33 @@
     justify-content: space-between;
 }
 .form-elements input{
-    height: 20px;
+    height: 1.3vw;
+    font-size: inherit;
 }
 .form-elements textarea{
-    width: 300px;
+    width: 19.2vw;
     height: 70px;
 }
 .gender{
-    width: 300px;
+    width: 21vw;
     display: flex;
     justify-content: space-evenly;
 }
 
-#name{
-    width: 350px;
+.input-name{
+    width: 12vw;
 }
 #age{
-    width: 100px;
+    width: 7.8vw;
 }
 #email{
-    width: 200px;
+    width: 14vw;
 }
 #std{
-    width: 25px;
+    width: 2.5vw;
+}
+#phone{
+    width: 9vw;
 }
 .stores{
     width: 35vw;
@@ -143,9 +149,9 @@
 }
 
 .msg-at-whatsapp{
-    width: 900px;
+    width: 56.8vw;
     text-align: center;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -164,6 +170,10 @@
     display: none;
 }
 
+.responsive-at-600{
+    display: none;
+}
+
 @media screen and (max-width:1450px) {
     .responsive-1450px{
         display: none;
@@ -172,4 +182,153 @@
     .not-vis-at-1536px{
         display: flex;
     }
+}
+
+@media screen and (max-width:1300px) {
+    .items{
+        height: 22vw;
+    }
+    .items img{
+        width: 24vw;
+    }
+    .item-name{
+        width: 24vw;
+        font-size: 1.4vw;
+    }
+    .buy-or-cart{
+        width: 12vw;
+        height: 3vw;
+        font-size: 1.2vw;
+    }
+    .accessories{
+        height: 38vw;
+    }
+    .see-all{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-doc{
+        width: 50vw;
+    }
+    .form{
+        width: 50vw;
+    }
+    .form form{
+        font-size: 1.6vw;
+    }
+    .or{
+        width: 50vw;
+        font-size: 3.5vw;
+    }
+    .or hr{
+        width: 15vw;
+    }
+    .msg-at-whatsapp{
+        width: 50vw;
+        font-size: 2.5vw;
+    }
+
+    .stores{
+        width: 45vw;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-at-600{
+        display: block;
+    }
+    .unresponsive-at-600{
+        display: none;
+    }
+    .products{
+        flex-direction: column;
+        align-items: center;
+        height: 240vw;
+    }
+    .other-products{
+        height: 260vw;
+    }
+    .items{
+        height: 60vw;
+    }
+    .items img{
+        width: 72vw;
+    }
+    .item-name {
+        width: 72vw;
+        font-size: 3.5vw;
+    }
+    .buy-or-cart {
+        width: 36vw;
+        height: 30px;
+        font-size: 3vw;
+    }
+    .see-all {
+        font-size: 2.5vw;
+        margin-left: 70vw;
+    }
+
+    .consult-and-list{
+        flex-direction: column;
+    }
+    .contact-doc{
+        width: 98vw;
+        height: 800px;
+    }
+    .form{
+        width: 90vw;
+        height: 400px;
+    }
+    .form form{
+        width: 80vw;
+        height: 400px;
+        font-size: 4vw;
+    }
+    #responsive-at-600{
+        display: flex;
+    }
+    #unresponsive-at-600{
+        display: none;
+    }
+
+    .form-elements input {
+        height: 4vw;
+    }
+    .gender{
+        width: 30vw;
+    }
+    .form-elements textarea{
+        width: 75vw;
+        height: 100px;
+    }
+
+    #email{
+        width: 50vw;
+    }
+    #email-or-phone{
+        justify-content: center;
+    }
+    #std {
+        width: 7vw;
+    }
+    #phone {
+        width: 35vw;
+    }
+
+    .or {
+        width: 98vw;
+        font-size: 5vw;
+    }
+    .or hr {
+        width: 30vw;
+        margin-top: 13.2px;
+    }
+    .msg-at-whatsapp {
+        width: 98vw;
+        font-size: 5vw;
+    }
+
 }

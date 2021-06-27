@@ -186,7 +186,7 @@ footer .footer-bottom{
         height: 15px;
     }
 }
-@media screen and (max-width:577px) {
+/* @media screen and (max-width:577px) {
     footer .footer-content{
         height: 60vw;
     }
@@ -223,4 +223,25 @@ footer .footer-bottom{
     .fa{
         padding: 1.1vw;
     }
+} */
+
+@media screen and (max-width: 600px) {
+    footer .footer-content {
+        height: 160vw;
+        flex-direction: column;
+    }
+    footer .footer-content .footer-input {
+        width: 80vw;
+    }
+    .links ul li {
+        line-height: 6vw;
+    }
+    .text {
+        width: 70vw;
+        height: 25vw;
+    }
+    .email-add {
+        height: 6vw;
+    }
+    
 }

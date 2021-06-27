@@ -23,9 +23,16 @@
 
       function restoreAppearance(){
           inputDiv = document.getElementById('search');
-          inputDiv.innerHTML = '<span class="block">Search <i class="fa fa-search"></i></span>';
+          inputDiv.innerHTML = '<span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Search <i class="fa fa-search"></i></span>';
       }
-    
+      function hoverin(obj)
+    {
+        obj.style.backgroundColor = "#D64541";
+    }
+    function hoverout(obj)
+    {
+        obj.style.backgroundColor ="white";
+    }
     </script>
     <style>
         * {box-sizing: border-box}
@@ -97,6 +104,34 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+.button1{
+  margin-top: 3vh;
+  padding: 0.6rem;
+  background-color:white;
+  font-size: x-large;
+
+  color:black;
+
+}
+
+.button2{
+  margin-left: 1vw;
+  margin-bottom: 3vh; 
+  padding: 0.6rem;
+  background-color: white;
+  font-size: x-large;
+
+  color: black;
+
+}
+
+hr {
+  border: 1px solid black;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 65%;
+}
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2.5s;
@@ -107,6 +142,11 @@ img {vertical-align: middle;}
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+button:hover{
+  background-color: #D64541;
+  color: white;
 }
 
 @keyframes fade {
@@ -126,9 +166,9 @@ img {vertical-align: middle;}
             <span class="company-name">OptiCare</span>
         </div>
         <div class="search" id="search" onclick="searchfunction(this)" style="z-index: 1000;">
-            <span class="block">Search <i class='fa fa-search'></i></span></div>
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" >Search <i class='fa fa-search'></i></span></div>
         <div class="backtohome">
-            <span class="block"><a href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>
+            <span onmouseover="hoverin(this)" onmouseout="hoverout(this)" class="block"><a href="Homepage.html" style="text-decoration: none; color:inherit;">Back To Home</a></span>
         </div>
     </header>
     <div>
@@ -166,8 +206,11 @@ img {vertical-align: middle;}
         </div>
     <div class="price">
         FuturumaBlue, 16MP Camera, Dual Microphones, Attached earphones.<br>
-        Price : 4499.00 Rs (Inclusive of all taxes).
-
+        Price : 4499.00 Rs (Inclusive of all taxes).<br>
+        <button type="button" class="button1" >Add to Cart </button>
+        <button type="button" class="button2" >Buy now </button><br>
+        No delivery charges applied on this order!!
+                  <hr>
     </div>
     <div>
         <h2 class="tagline"> See the World Clearly without any worry with blue filter lens</h2>

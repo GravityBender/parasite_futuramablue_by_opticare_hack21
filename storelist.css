@@ -1,15 +1,16 @@
 .storeList ul{
     height:400px; 
-    width: 475px;
+    width: 31vw;
     overflow:hidden;
     overflow-y:scroll;
     margin: auto;
-    background-color: white;
 }
 
 .storeList li{
     list-style: none;
     border: 0.5px solid gray;
+    background-color: white;
+    border-radius: 1vw;
 }
 
 .location{
@@ -23,7 +24,7 @@
     width: 250px;
 }
 .city{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-left: 10px;
@@ -33,4 +34,53 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     margin-left: 10px;
+}
+.map iframe{
+    width: 16vw;
+    height: 100px;
+    border-radius:20px;
+}
+
+@media screen and (max-width:1200px) {
+    .sub-city{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .storeList ul{
+        width: 42vw;
+    }
+    .city{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .stores{
+        width:75vw;
+        height: 400px;
+    }
+    .storeList ul{
+        height: 300px;
+        width: 65vw;
+    }
+    .city{
+        font-size: 3vw;
+    }
+    .sub-city{
+        font-size: 12px;
+    }
+    .map iframe {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .city{
+        font-size: 13px;
+    }
+    .sub-city{
+        font-size: 11px;
+    }
 }

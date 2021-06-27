@@ -44,8 +44,21 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  
+         }
+ 
+.cls1{
+color: #aaaaaa;
+float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
+
+.cls1:hover,
+.cls1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
     </style>
     <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -65,9 +78,30 @@
         
     function searchfunction(obj)
     {
+        obj.innerHTML= '<div class="searchbar"><input type="text" name="" id=""><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
+        if(window.matchMedia("(max-width: 1300px)").matches){
+            document.getElementById("buy-or-addcart").style.display = "none";
+            document.getElementById("responsive-cart").style.display = "none";
+            if(window.matchMedia("(max-width: 800px)").matches){
+                document.getElementById("login-or-signup").style.display = "none";
+                document.getElementById("responsive-at-800px").style.display = "block";
+            }
+
+        }
+        else{
+            return;
+        }
         obj.innerHTML= '<div class="searchbar"><input type="text" id="inpt"><i class="material-icons">search</i></div><i class="material-icons">&#xe152;</i>';
         inpt = document.getElementById('inpt');
         inpt.focus();
+    }
+    function hoverin(obj)
+    {
+        obj.style.backgroundColor = "#D64541";
+    }
+    function hoverout(obj)
+    {
+        obj.style.backgroundColor ="white";
     }
 
     </script>
@@ -89,29 +123,37 @@
             <a href="Homepage.html"><span class="company-name">OptiCare</span></a>
         </div>
         <div class="search unresponsive-500" onclick="searchfunction(this)">
-            <span class="block" >Search <i class='fa fa-search'></i></span>
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" >Search <i class='fa fa-search'></i></span>
         </div>
         <div class="buy-or-addcart" id="buy-or-addcart">
-            <span class="block"> Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block"
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)"> Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block"onmouseover="hoverin(this)" onmouseout="hoverout(this)"
                 onclick="addtocart()">Add to Cart <i class='fas fa-cart-plus'></i> </span>
         </div>
         <div class="responsive-cart">
             <span class="block" onclick="addtocart()">Cart <i class='fas fa-cart-plus' id="cart-plus"></i></span>
         </div>
         <div class="login-or-signup">
-            <span class="block" onclick="login()"><a href="LoginPage.html"
+            <span onmouseover="hoverin(this)" onmouseout="hoverout(this)" class="block" onclick="login()"><a href="LoginPage.html"
                     style="text-decoration: none; color:inherit;">Login <i
-                        class="fa fa-user-circle-o"></i></a></span><span class="block" onclick="signup()"><a
+                        class="fa fa-user-circle-o"></i></a></span><span onmouseover="hoverin(this)" onmouseout="hoverout(this)" class="block" onclick="signup()"><a
                     href="SignUp.html" style="text-decoration: none; color:inherit;">Sign-up <i
                         class="fa fa-user-plus"></i></a></span>
         </div>
+
+        <div class="responsive-at-800px" id="responsive-at-800px">
+            <span class="block"><i class='fas fa-cart-plus'></i><i class="fa fa-user-circle-o"></i><i class="fa fa-user-plus"></i></span>
+        </div>
+        
     </header>
-    <div class="search responsive-500">
-        <span class="block" onclick="searchfunction(this)">Search <i class='fa fa-search'></i></span>
+    <div class="search responsive-500" onclick="searchfunction(this)">
+        <span class="block" >Search <i class='fa fa-search'></i></span>
     </div>
+    <br>
+
+    <h1 style="text-align:center; font-weight:bold;font-family: Verdana, Geneva, Tahoma, sans-serif;" id="futurama-heading">Presenting Futurama-Blue!</h1>
+
     <div class="futurama-slider">
-        <h1 style="text-align:center; font-weight:bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Presenting
-            Futurama-Blue!</h1><br>
+        
         <figure>
             <a href="mainproduct.html"><img
                     src="https://i.pinimg.com/originals/89/c5/22/89c522605db94231836ab5e7e510c7b0.jpg" alt=""></a>
@@ -129,7 +171,8 @@
     </div>
 
 
-    <div class="other-products">
+    <div class="other-products unresponsive-at-600">
+        <br>
         <h2>Other Spectacles:</h2>
         <div class="products">
             <div class="items">
@@ -231,8 +274,57 @@
     </div>
 
 
+    <div class="other-products responsive-at-600">
+        <br>
+        <h2>Other Spectacles:</h2>
+        <div class="products">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs1<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs1" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs2<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs2" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs3<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs3" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs4<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <span class="see-all"><a href="#" style="text-decoration: none; color: inherit;">See all <i
+                class='fas'>&#xf101;</i></a></span>
+        </div>
+    </div>
 
     <div class="other-products accessories">
+        <br>
         <h2>Other Accessories:</h2>
         <div class="products">
             <div class="items">
@@ -288,7 +380,7 @@
         <div class="other-products inline-block contact-doc">
             <h2>Consult a doctor:</h2>
             <div class="form">
-                <form action="">
+                <form action="" id="unresponsive-at-600">
                     <div class="form-elements">
                         <label for="name">First Name: </label>
                         <input type="text" name="name">
@@ -363,6 +455,90 @@
                           </script>
                     </div>
 
+                </form>
+                <form action="" id="responsive-at-600">
+                    <div class="form-elements">
+                        <label for="name">First Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="name">Last Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age">
+                        <label for="male">Gender: </label>
+                        <div class="gender">
+                            <label for="male">M</label>
+                            <input type="radio" name="gender" id="male">
+                            <label for="female">F</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="others">O</label>
+                            <input type="radio" name="gender" id="others">
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <label for="">Describe your problem or need: </label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-elements">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-elements" id="email-or-phone">
+                        <label for="phone"> OR  </label>
+                    </div>
+                    <div class="form-elements">
+                        <label for="phone">Phone: </label>
+                        <div>
+                        <input type="text" name="" id="std" value="+91">
+                        <input type="tel" name="phone" id="phone">
+                        </div>
+
+                    </div>
+
+                    <div>
+                     
+                        <button type="reset" class="submit-form" id="mB">Submit</button>
+                       
+                       <div id="mm" class="m1">
+
+                           <!-- Modal content -->
+                           <div class="m2">
+                             <span class="cls">&times;</span>
+                             <p>Thank you for submitting the form.We will get back to you.</p>
+                           </div>
+                         
+                         </div>
+                         
+                         <script>
+                       
+                         var modal = document.getElementById("mm");
+                  
+                         var btn = document.getElementById("mB");
+                
+                           var span = document.getElementsByClassName("cls")[0];
+                         
+                       
+                         btn.onclick = function() {
+                           modal.style.display = "block";
+                         }
+                         
+                      
+                         span.onclick = function() {
+                           modal.style.display = "none";
+                         }
+                     window.onclick = function(event) {
+                       if (event.target == modal) {
+                       modal.style.display = "none";
+                            }
+                               }
+                         
+                        
+                        
+                         </script>
+                   </div>
                 </form>
             </div>
             <div class="or">
@@ -569,7 +745,44 @@
                 <div class="feedback-content">
                     <input type="email" name="email" class="text email-add" placeholder=" Enter your email address"><br>
                     <textarea name="message" class="text" rows="6" placeholder=" Enter your feedback"></textarea><br>
-                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="submit" id="mB1"> Submit</button>
+                    <div id="mm1" class="m1">
+
+                        <!-- Modal content -->
+                        <div class="m2">
+                          <span class="cls1">&times;</span>
+                          <p style="color: #000;">Thank you for your feedback.</p>
+                        </div>
+                      
+                      </div>
+                      
+                      <script>
+                      
+                      var ml = document.getElementById("mm1");
+                      
+                     
+                      var button = document.getElementById("mB1");
+                      
+                   
+                      var sp=document.getElementsByClassName("cls1")[0];
+                      
+                      
+                      button.onclick = function() {
+                        ml.style.display = "block";
+                      }
+                      
+                      
+                      sp.onclick = function() {
+                        ml.style.display = "none";
+                      }
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == ml) {
+                          ml.style.display = "none";
+                        }
+                      }
+                      </script>
                 </div>
             </div>
 

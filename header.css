@@ -42,7 +42,7 @@ header{
 .searchbar input{
     border: none;
     margin-left: 10px;
-    width: 25vw;
+    width: 24vw;
     height: 20px;
 }
 .block{
@@ -51,7 +51,7 @@ header{
     height: 70px;
     font-size: 17px;
     line-height: 70px;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 .block:hover{
@@ -66,10 +66,14 @@ header{
     display: none;
 }
 
+.responsive-at-800px{
+    display: none;
+}
+
 @media screen and (max-width: 1100px) {
     .block{
         font-size: 15px;
-        width: 130px;
+        width: 13vw;
     }
 }
 
@@ -78,11 +82,15 @@ header{
         height: 6vw;
     }
     .company-logo img{
-        width: 5.5rem;
+        width: 11vw;
+        height: 5vw;
     }
 
     .company-name{
-        font-size: 2rem;
+        font-size: 3.5vw;
+    }
+    .searchbar input{
+        width: 20vw;
     }
 }
 
@@ -95,5 +103,54 @@ header{
     }
     #cart-plus{
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .block{
+        width: 20vw;
+    }
+    .login-or-signup{
+        display: none;
+    }
+    .responsive-cart{
+        display: none;
+    }
+    .responsive-at-800px{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    header{
+        height: 11vw
+    }
+    .company-logo{
+        width: 50vw;
+        height: 10vw;
+    }
+    .company-logo img{
+        width: 22vw;
+        height: 10.5vw;
+    }
+    .company-name{
+        font-size: 6vw;
+    }
+
+    .block{
+        width: 30vw;
+        font-size: 4vw;
+    }
+    .unresponsive-500{
+        display: none;
+    }
+    .responsive-500{
+        display: block;
+        text-align: center;
+    }
+    .responsive-500 .block{
+        height: 30px;
+        line-height: 30px;
     }
 }

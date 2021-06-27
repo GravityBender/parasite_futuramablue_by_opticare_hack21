@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCare</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .m1 {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            padding-top: 250px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .m2 {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+        }
+
+        .cls {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .cls:hover,
+        .cls:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cls1 {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .cls1:hover,
+        .cls1:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            }
+
+
+  .cancelbtn1 {
+  padding: 25px;
+
+  margin-left: 23.4vw;
+}
+
+.signupbtn1{
+    padding: 25px;
+
+}
+
+.cancelbtn1, .signupbtn1 {
+  float: left;
+  width: 26.41%;
+
+        }
+
+
+    </style>
+    <link rel="icon" href="hackhathon_logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="futurama-slider.css">
+    <link rel="stylesheet" href="other-products.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="storelist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c41d9efb3c.js" crossorigin="anonymous"></script>
+    <script>
+
+        function searchfunction(obj) {
+            obj.innerHTML = '<div class="searchbar" style="width : 80%"><input type="text" id="inpt" placeholder="Search here.." style="width : 90%"><i class="material-icons">search</i></div>';
+            inpt = document.getElementById('inpt');
+            inpt.focus();
+            if (window.matchMedia("(max-width: 1300px)").matches) {
+                document.getElementById("buy-or-addcart").style.display = "none";
+                document.getElementById("responsive-cart").style.display = "none";
+                if (window.matchMedia("(max-width: 800px)").matches) {
+                    document.getElementById("login-or-signup").style.display = "none";
+                    document.getElementById("responsive-at-800px").style.display = "block";
+                }
+
+            }
+            else {
+                return;
+            }
+            obj.innerHTML = '<div class="searchbar"><input type="text" id="inpt" placeholder="Search here.."><i class="material-icons">search</i></div>';
+            inpt = document.getElementById('inpt');
+            inpt.focus();
+        }
+        function hoverin(obj) {
+            obj.style.color = "white";
+            obj.style.backgroundColor = "#D64541";
+        }
+        function hoverout(obj) {
+            obj.style.color = "black";
+            obj.style.backgroundColor = "white";
+        }
+
+        var i=0;
+
+        function showcatalog(){
+            
+            document.getElementsByClassName("catalog")[i].style.display = "flex";
+            i++;
+
+            var ht = document.getElementById("height-for-catalog").style.height;
+        }
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body >
+
+    <div id="mm2" class="m1" >
+
+        
+        <div class="m2">
+         
+        <p st> You are not logged in yet.</p>
+        </div>
+        <div class="clearfix">
+            <button type="reset" class="cancelbtn1"  onclick="document.getElementById('mm2').style.display='none'">Cancel</button>
+           <a href="SignUp.html"><button type="reset" class="signupbtn1">Sign Up</button></a> 
+          </div>
+      
+      </div>
+      
+      <script>
+      
+      var ml1 = document.getElementById("mm2");
+    
+      var home = document.getElementById("mB2");
+ 
+      home.onload = function() {
+        ml1.style.display = "block";
+      }
+    
+    
+      </script>
+
+
+    <header>
+        <div class="company-logo">
+            <a href="index.html"><img src="hackhathon logo (1).png" alt="logo">&nbsp;</a>
+            <a href="index.html"><span class="company-name">OptiCare</span></a>
+        </div>
+        <div class="search unresponsive-500" onclick="searchfunction(this)">
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" >Search <i
+                    class='fa fa-search'></i></span>
+        </div>
+        <div class="buy-or-addcart" id="buy-or-addcart">
+            <span class="block" onmouseover="hoverin(this)" onmouseout="hoverout(this)" id="mB2"> Buy Now <i
+                    class="fas fa-shopping-cart" id="myBtn"></i></span><span class="block" onmouseover="hoverin(this)"
+                onmouseout="hoverout(this)" onclick="addtocart()" id="mB3">Add to Cart <i class='fas fa-cart-plus'></i> </span>
+
+                <div id="mm2" class="m1" >
+
+        
+                    <div class="m2">
+                     
+                    <p st> You are not logged in yet.</p>
+                    </div>
+                    <div class="clearfix">
+                        <button type="reset" class="cancelbtn1"  onclick="document.getElementById('mm2').style.display='none'">Cancel</button>
+                       <a href="SignUp.html"><button type="reset" class="signupbtn1">Sign Up</button></a> 
+                      </div>
+                  
+                  </div>
+                  
+                  <script>
+                  
+                  var ml1 = document.getElementById("mm2");
+                
+                  var home = document.getElementById("mB2");
+             
+                  home.onclick = function() {
+                    ml1.style.display = "block";
+                  }
+                
+                
+                  </script>
+
+     <div id="mm3" class="m1" >
+
+        
+      <div class="m2">
+     
+     <p st> You are not logged in yet.</p>
+    </div>
+     <div class="clearfix">
+        <button type="reset" class="cancelbtn1"  onclick="document.getElementById('mm3').style.display='none'">Cancel</button>
+       <a href="SignUp.html"><button type="reset" class="signupbtn1">Sign Up</button></a> 
+      </div>
+  
+  </div>
+  
+  <script>
+  
+  var ml2 = document.getElementById("mm3");
+
+  var addcart = document.getElementById("mB3");
+
+addcart.onclick = function() {
+    ml2.style.display = "block";
+  }
+
+
+  </script>
+            
+        </div>
+        <div class="responsive-cart">
+            <span class="block" onclick="addtocart()">Cart <i class='fas fa-cart-plus' id="cart-plus"></i></span>
+        </div>
+        <div class="login-or-signup">
+            <span onmouseover="hoverin(this)" onmouseout="hoverout(this)" class="block" onclick="login()"><a
+                    href="LoginPage.html" style="text-decoration: none; color:inherit;">Login <i
+                        class="fa fa-user-circle-o"></i></a></span><span onmouseover="hoverin(this)"
+                onmouseout="hoverout(this)" class="block" onclick="signup()"><a href="SignUp.html"
+                    style="text-decoration: none; color:inherit;">Sign-up <i class="fa fa-user-plus"></i></a></span>
+        </div>
+
+        <div class="responsive-at-800px" id="responsive-at-800px">
+            <span class="block"><i class='fas fa-cart-plus'></i><i class="fa fa-user-circle-o"></i><i
+                    class="fa fa-user-plus"></i></span>
+        </div>
+
+    </header>
+    <div class="search responsive-500" onclick="searchfunction(this)" style="margin-top: 10px;">
+        <span class="block">Search <i class='fa fa-search'></i></span>
+    </div><br>
+    <h1 style="text-align:center; font-weight:bold;font-family: Verdana, Geneva, Tahoma, sans-serif;" id="small-text">Presenting
+        Futurama-Blue!</h1>
+    <div class="futurama-slider">
+
+        <figure>
+            <a href="mainproduct.html"><img
+                    src="https://i.pinimg.com/originals/89/c5/22/89c522605db94231836ab5e7e510c7b0.jpg" alt=""></a>
+            <a href="mainproduct.html"><img
+                    src="https://cdn.shopify.com/s/files/1/0057/0277/8995/products/Sunglasses-Bluetooth-Headset-Outdoor-Glasses-Earbuds-Music-with-Mic-Stereo-Wireless-Headphone-for-iPhone-Samsung-Sony.jpg?v=1578687599"
+                    style="height:500px" alt=""></a>
+            <a href="mainproduct.html"><img
+                    src="https://i.pinimg.com/originals/89/c5/22/89c522605db94231836ab5e7e510c7b0.jpg" alt=""></a>
+            <a href="mainproduct.html"><img src="https://www.amournova.com/wp-content/uploads/2020/03/227700-29cbb8.jpg"
+                    alt=""></a>
+            <a href="mainproduct.html"><img
+                    src="https://image.dhgate.com/0x0s/f2-albu-g5-M01-2C-D3-rBVaI1mFjZCAWX-6AAFMJ8BW9jA867.jpg/sunglasse-glasses-bluetooth-headset-sports.jpg"
+                    alt="" style="height:800px"></a>
+        </figure>
+    </div>
+
+
+    <div class="other-products height-for-catalog">
+        <h2>Other Spectacles:</h2>
+        <div class="products unresponsive-at-600">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs1<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs1" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs2<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs2" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs3<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs3" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs4<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="products unresponsive-at-600">
+            <div class="items not-vis-at-1536px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs3" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs4<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs4" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs5<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs5" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs6<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs6" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs7<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items  responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs7" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs8<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="products unresponsive-at-600 catalog">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs8" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs9<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs9" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs10<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs10" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs11<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs11" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs12<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="products unresponsive-at-600 catalog">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs12" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs13<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs13" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs14<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs14" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs15<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs15" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs16<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="products unresponsive-at-600 catalog">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs12" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs13<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs13" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs14<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs14" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs15<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs15" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs16<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="products responsive-at-600">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs1<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs1" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs2<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs2" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs3<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?glasses,specs3" alt="">
+                <div class="item-info">
+                    <span class="item-name">Specs4<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <span class="see-all"><a href="SeeAll2.html" style="text-decoration: none; color: inherit;" onclick="showcatalog()">See all <i
+            class='fas'>&#xf101;</i></a></span>
+    </div>
+        
+
+
+
+    <div class="other-products accessories">
+        <h2>Other Accessories:</h2>
+        <div class="products">
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?case,specs" alt="">
+                <div class="item-info">
+                    <span class="item-name">Case1<span class="item-name-specs">(specifications)</span></span>
+
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?specs-cases" alt="">
+                <div class="item-info">
+                    <span class="item-name">Cleaner1<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://source.unsplash.com/300x200/?cleaner,glass" alt="">
+                <div class="item-info">
+                    <span class="item-name">Case2<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+            <div class="items responsive-1450px">
+                <img src="https://source.unsplash.com/300x200/?case,specs" alt="">
+                <div class="item-info">
+                    <span class="item-name">Cleaner<span class="item-name-specs">(specifications)</span></span>
+                </div>
+                <div class="btns">
+                    <button class="buy-or-cart">Buy Now <i class="fas fa-shopping-cart" id="myBtn"></i></button><button
+                        class="buy-or-cart">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <span class="see-all"><a href="SeeAll1.html" style="text-decoration: none; color: inherit;">See all <i
+                    class='fas'>&#xf101;</i></a></span>
+    </div>
+
+
+    <div class="consult-and-list">
+        <div class="other-products inline-block contact-doc">
+            <h2>Consult a doctor:</h2>
+            <div class="form">
+                <form action="" id="unresponsive-at-600">
+                    <div class="form-elements">
+                        <label for="name">First Name: </label>
+                        <input type="text" name="name">
+                        <label for="name">Last Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age">
+                        <label for="male">Gender: </label>
+                        <div class="gender">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="others">Others</label>
+                            <input type="radio" name="gender" id="others">
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <label for="">Describe your problem or need: </label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-elements">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phone"> OR Phone: </label>
+                        <input type="text" name="" id="std" value="+91">
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+
+                    <div>
+
+                        <button type="reset" class="submit-form" id="mB">Submit</button>
+
+                        <div id="mm" class="m1">
+
+                            <!-- Modal content -->
+                            <div class="m2">
+                                <span class="cls">&times;</span>
+                                <p>Thank you for submitting the form.We will get back to you.</p>
+                            </div>
+
+                        </div>
+
+                        <script>
+
+                            var modal = document.getElementById("mm");
+
+                            var btn = document.getElementById("mB");
+
+                            var span = document.getElementsByClassName("cls")[0];
+
+
+                            btn.onclick = function () {
+                                modal.style.display = "block";
+                            }
+
+
+                            span.onclick = function () {
+                                modal.style.display = "none";
+                            }
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+
+
+
+                        </script>
+                    </div>
+
+                </form>
+
+
+                <form action="" id="responsive-at-600">
+                    <div class="form-elements">
+                        <label for="name">First Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="name">Last Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age">
+                        <label for="male">Gender: </label>
+                        <div class="gender">
+                            <label for="male">M</label>
+                            <input type="radio" name="gender" id="male">
+                            <label for="female">F</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="others">O</label>
+                            <input type="radio" name="gender" id="others">
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <label for="">Describe your problem or need: </label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-elements">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-elements" style="justify-content: center;">
+                        <label for="phone"> OR </label>
+                    </div>
+                    <div class="form-elements">  
+                        <label>Phone: </label>
+                        <div>
+                        <input type="text" name="" id="std" value="+91">
+                        <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <button type="reset" class="submit-form" id="mB">Submit</button>
+
+                        <div id="mm" class="m1">
+
+                            <!-- Modal content -->
+                            <div class="m2">
+                                <span class="cls">&times;</span>
+                                <p>Thank you for submitting the form.We will get back to you.</p>
+                            </div>
+
+                        </div>
+
+                        <script>
+
+                            var modal = document.getElementById("mm");
+
+                            var btn = document.getElementById("mB");
+
+                            var span = document.getElementsByClassName("cls")[0];
+
+
+                            btn.onclick = function () {
+                                modal.style.display = "block";
+                            }
+
+
+                            span.onclick = function () {
+                                modal.style.display = "none";
+                            }
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+
+
+
+                        </script>
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="or">
+                <div>
+                    <hr>
+                </div>
+                OR
+                <div>
+                    <hr>
+                </div>
+            </div>
+            <div class="msg-at-whatsapp">
+                Message us at: &nbsp;<i class="fa fa-whatsapp"></i> &nbsp;+91-9000000001
+            </div>
+        </div>
+        <div class="other-products inline-block stores">
+            <h2>Our stores in India: </h2>
+
+
+            <div class="storeList">
+                <ul>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Delhi</span>
+                                <span class="sub-city">Sector 7D, Rohini</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224180.81975419892!2d77.1802670290636!3d28.60501705678396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0158ffffffff%3A0xa4c652db9d597be4!2sOpticare%20Opticals!5e0!3m2!1sen!2sin!4v1624696434750!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Hyderabad</span>
+                                <span class="sub-city">Triveni Nagar, Kanchan Bagh</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121854.67286607511!2d78.41049979654272!3d17.3657285449881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba28a3aad15df%3A0xff2cca659de14576!2sOpticare%20Opticals%26Eye%20Clinic!5e0!3m2!1sen!2sin!4v1624697057316!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Ghaziabad</span>
+                                <span class="sub-city">Shyam park Extension, Sahibabad</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224180.81975419892!2d77.1802670290636!3d28.60501705678396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa8603251b7d%3A0xe189f9383a494a27!2sSUNAIAN%20OPTICARE!5e0!3m2!1sen!2sin!4v1624695618001!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Mumbai</span>
+                                <span class="sub-city">Polycab, Mahim West</span>
+                            </div>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6708427066624!2d72.84467431481612!3d19.03422065823086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf68f0d3917b%3A0xf4dc1a4ff72806ee!2sOpticare%20Eye%20Clinic%20%3A%20Eye%20Specialist%20%7C%20Eye%20Clinic%20%7C%20Eye%20Surgeon%20%7C%20Cataract%20Surgeon%20%7C%20Lasik%20Surgeon%20%7C%20Oculoplasty%20Doctor%20%7C%20Eye%20Hospital%20%7C%20Eye%20Testing%20Clinic%20%7C%20Ophthalmologist%20in%20Mahim!5e0!3m2!1sen!2sin!4v1624696801897!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Pune</span>
+                                <span class="sub-city">New DP Road, Gananjay Society</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5180165230854!2d73.8064555148098!3d18.505478874465744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc820a4b663%3A0x3d934006f4ec11f3!2sOpticare!5e0!3m2!1sen!2sin!4v1624697404374!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Delhi</span>
+                                <span class="sub-city">Sector 15G, Rohini</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27988.826028471565!2d77.10957383955078!3d28.731400599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01b70fb423cf%3A0xf20f5576e473dee5!2sOpticare%20the%20optical%20shop!5e0!3m2!1sen!2sin!4v1624697656377!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+                    <li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Hyderabad</span>
+                                <span class="sub-city">Nandi Nagar, Banjara Hills</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121854.87458404504!2d78.41049993534246!3d17.36542524864749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972af40ca033%3A0x28caf781b0914538!2sOpti%20Care!5e0!3m2!1sen!2sin!4v1624696976571!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Kolkata</span>
+                                <span class="sub-city">Buroshibtalla, Behala</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117956.37683317238!2d88.26828715820311!3d22.499050900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027a1155555555%3A0x8d551523bc1ab22e!2sOpti%20Care!5e0!3m2!1sen!2sin!4v1624697135544!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Bhopal</span>
+                                <span class="sub-city">Ali Manzil Road, Shahjahanabad</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.7151726075263!2d77.39971031487401!3d23.253449613495068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c694580d867c7%3A0xb412fc915a49171e!2sOpticare%20Opticals!5e0!3m2!1sen!2sin!4v1624697266037!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="location">
+                            <div class="place">
+                                <span class="city">Delhi</span>
+                                <span class="sub-city">PVR Cinemas Road, Prashant Vihar</span>
+                            </div>
+                            <div class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27993.415996658157!2d77.11653613955076!3d28.714255900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01f2031aa311%3A0x74b9845b6ca362a3!2sOpticare%20Opticals!5e0!3m2!1sen!2sin!4v1624697799308!5m2!1sen!2sin"
+                                    width="200" height="100" style="border-radius:20px;" allowfullscreen=""
+                                    loading="lazy"></iframe></div>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <a id="Contact"></a>
+        <div class="footer-content">
+
+            <div class="footer-input about">
+                <h1 class="name">
+                    <span class="company-name-footer">OptiCare</span>
+                </h1><br>
+                <p class="footer-data">OptiCare is the best eye-product selling company. We sell glasses that help
+                    everyonefrom a student in their studies and daily mobile/computer usage to their grandpas who
+                    couldn't read the newspaper headline.</p><br>
+                <span class="footer-data">Email:&nbsp;<a href="#" class="email"
+                        style="color: inherit;">helpdesk@opticare.co.in</a></span><br><br>
+                <span class="footer-data">Social Media links:</span><br><br>
+                <a href="https://www.facebook.com/Opticare-110958867903325" class="fa fa-facebook"></a>&nbsp;
+                <a href="https://twitter.com/opticare7" class="fa fa-twitter"></a>&nbsp;
+                <a href="https://www.reddit.com/user/Opticare_future" class="fa fa-reddit"></a>&nbsp;
+                <a href="https://www.youtube.com/channel/UCnGNsOKKrZZugEbtmTo4zaw" class="fa fa-youtube"></a>&nbsp;
+                <a href="https://www.instagram.com/opticare_tofuture/" class="fa fa-instagram"></a>&nbsp;
+            </div>
+            <div class="footer-input links">
+                <h2>Quick links:</h2><br>
+                <ul>
+                    <li class="footer-data"><a href="index.html">Home</a></li>
+                    <li class="footer-data"><a href="AboutUs.html">About Us</a></li>
+                    <li class="footer-data"><a href="mainproduct.html">FUTURAMA Blue</a></li>
+                    <li class="footer-data"><a href="#">Doctor's Consultancy</a></li>
+                    <li class="footer-data"><a href="#">Stores in India</a></li>
+                </ul><br>
+                <span class="h4 footer-data"><a href="form.xhtml" class="email" style="color: inherit;">Click
+                        here</a>&nbsp;to view our catalogue.</span>
+
+                <div class="links-responsive">
+                    <span class="footer-data">Email:&nbsp;<a href="#"
+                            class="email">helpdesk@opticare.co.in</a></span><br>
+                    <span class="footer-data">Social Media links:</span><br>
+                    <a href="https://www.facebook.com/Opticare-110958867903325" class="fa fa-facebook"></a>&nbsp;
+                    <a href="https://twitter.com/opticare7" class="fa fa-twitter"></a>&nbsp;
+                    <a href="https://www.reddit.com/user/Opticare_future" class="fa fa-reddit"></a>&nbsp;
+                    <a href="https://www.youtube.com/channel/UCnGNsOKKrZZugEbtmTo4zaw" class="fa fa-youtube"></a>&nbsp;
+                    <a href="https://www.instagram.com/opticare_tofuture/" class="fa fa-instagram"></a>&nbsp;
+                </div>
+
+            </div>
+            <div class="footer-input feedback">
+                <h2>Feedback:</h2><br>
+                <div class="feedback-content">
+                    <input type="email" name="email" class="text email-add" placeholder=" Enter your email address"><br>
+                    <textarea name="message" class="text" rows="6" placeholder=" Enter your feedback"></textarea><br>
+                    <button type="reset" class="submit" id="mB1"> Submit</button>
+                    <div id="mm1" class="m1">
+
+                        <!-- Modal content -->
+                        <div class="m2">
+                            <span class="cls1">&times;</span>
+                            <p style="color: #000;">Thank you for your feedback.</p>
+                        </div>
+
+                    </div>
+
+                    <script>
+
+                        var ml = document.getElementById("mm1");
+
+
+                        var button = document.getElementById("mB1");
+
+
+                        var sp = document.getElementsByClassName("cls1")[0];
+
+
+                        button.onclick = function () {
+                            ml.style.display = "block";
+                        }
+
+
+                        sp.onclick = function () {
+                            ml.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == ml) {
+                                ml.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            &copy;OptiCare Products 2020-21
+        </div>
+    </footer>
+</body>
+
+</html>
